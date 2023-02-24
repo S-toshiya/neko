@@ -1,12 +1,18 @@
 $(function () {
     $(".btn").on("click", function () {
-        // console.log($(".hundredNum").val());
-        // console.log($(".tenNum").val());
-        // console.log($(".oneNum").val());
-        // console.log($(".hundredNum").val()+$(".tenNum").val()+$(".oneNum").val());
         let nekoNum = $(".hundredNum").val()+$(".tenNum").val()+$(".oneNum").val()
-         console.log(nekoNum);
-
-        $(".nekoimg").append(`<p>https://http.cat/${nekoNum}</p>`)
+        //  console.log(nekoNum);
+        let nekoUrl = `https://http.cat/${nekoNum}`
+        $(".nekoimg").attr("src",nekoUrl)
+        // console.log(nekoUrl);
     })
+
+
+    $('.modal-btn').on('click',function () {
+        $('.modal-container').addClass('on');
+      });
+    
+      $('.close-btn-wrap').on('click',function () {
+        $('.modal-container').removeClass('on');
+      })
 })

@@ -1,0 +1,93 @@
+.modal-btn{
+    padding: 10px;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 200px;
+  }
+  
+  .parent{
+    position: relative;
+  }
+  
+  .modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.432);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: all .5s ease;
+  }
+  
+  .modal-container.on{
+    z-index: 2;
+    opacity: 1;
+  }
+  
+  .modal-message{
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  .modal-close{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+  
+  .modal-close::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+  }
+  
+  .modal-message p{
+    margin-top: 40%;
+  }
+  
+  .close-btn-wrap{
+    text-align: right;
+    position: relative;
+    /* width: 30px; */
+    height: 30px;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .gobtn{
+    margin-top: 20px;
+  }
+
+  .imgdag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+.nekoimg{
+    width: 800px;
+    height: 600px;
+ 
+}
