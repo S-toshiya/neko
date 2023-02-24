@@ -12,7 +12,7 @@ $(function () {
 
 
 
-    $("#gobtn").on("click", function () {
+    $(".gobtn").on("click", function () {
         let nekoNum = $(".input").val()
         //  console.log(nekoNum);
         let nekoUrl = `https://http.cat/${nekoNum}`
