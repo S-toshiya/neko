@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  font-size: 100%;
+}
+
 main {
   max-width: 1000px;
   margin: 100px auto 100px;
@@ -38,19 +42,33 @@ li {
   justify-content: center;
   gap: 2rem;
 }
-.inputnums #gobtn {
+.inputnums input {
+  font-size: 120%;
+}
+.inputnums a {
+  text-decoration: none;
+}
+.inputnums .gobtn {
   list-style: none;
   outline: none;
   background: #c8e4be;
-  width: 2em;
-  height: 2em;
+  width: 3em;
+  height: 3em;
   text-align: center;
   border-radius: 50%;
   background: #c8e4be;
   box-shadow: 6px 6px 12px #aec6a5, -6px -6px 12px #e2ffd7;
   cursor: grab;
 }
-.inputnums #gobtn:hover {
+.inputnums .gobtn .modal-btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 85px;
+  padding: 3px 22px;
+  letter-spacing: 0.1em;
+}
+.inputnums .gobtn:hover {
   border-radius: 50%;
   background: #c8e4be;
   box-shadow: inset 6px 6px 12px #aec6a5, inset -6px -6px 12px #e2ffd7;
@@ -66,8 +84,8 @@ li {
   list-style: none;
   outline: none;
   background: #c8e4be;
-  width: 2em;
-  height: 2em;
+  width: 3em;
+  height: 3em;
   text-align: center;
   border-radius: 50%;
   background: #c8e4be;
@@ -93,20 +111,10 @@ button {
   appearance: none;
   list-style: none;
   color: #F2F2F2;
-  padding: 10px 20px;
+  padding: 30px 20px;
   width: 100%;
-  /* ボタンを親要素に合わせて伸ばす */
   max-width: 200px;
-  /* ボタンの最大幅を設定 */
-}
-
-.modal-btn {
-  padding: 10px;
-  background-color: rebeccapurple;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  margin-top: 200px;
+  font-size: 1em;
 }
 
 .parent {
@@ -133,7 +141,7 @@ button {
   opacity: 1;
 }
 
-modal-message {
+.modal-message {
   width: 1000px;
   height: 600px;
   text-align: center;
