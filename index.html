@@ -1,39 +1,97 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neko</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div>
+    <!-- <div>
         <input class="hundredNum" type="text">
         <input class="tenNum" type="text">
         <input class="oneNum" type="text">
-        <button class="btn">go</button>
-    </div>
+     <button class="btn">go</button> -->
+    <!-- </div> -->
 
-    <div>
-        <button id="button1" value="1">1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-    </div>
-    <div>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>0</button>
-    </div>
+    <main>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+        <h1>Randomly display cat images for your peace of mind</h1>
+        <div class="nekocontent">
+            <div class="inputnums inner">
+
+                <input class="input" type="text" maxlength="3">
+                <button id="gobtn">go</button>
+            </div>
+
+        </div>
+
+
+
+        <li class="btns inner">
+            <ul>
+                <li>
+                    <button id="button1" value="1">1</button>
+                </li>
+                <li>
+                    <button id="button2" value="2">2</button>
+                </li>
+                <li>
+                    <button id="button3" value="3">3</button>
+                </li>
+                <li>
+                    <button id="button4" value="4">4</button>
+                </li>
+                <li>
+                    <button id="button5" value="5">5</button>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button id="button6" value="6">6</button>
+                </li>
+                <li>
+                    <button id="button7" value="7">7</button>
+                </li>
+                <li>
+                    <button id="button8" value="8">8</button>
+                </li>
+                <li>
+                    <button id="button9" value="9">9</button>
+                </li>
+                <li>
+                    <button id="button0" value="0">0</button>
+                </li>
+            </ul>
+
+            </div>
+            </div>
+
+            </div>
+    </main>
+
+    <section class="parent">
+        <div class="gobtn">
+            <a class="modal-btn btn">go</a>
+        </div>
+        <div class="modal-container">
+            <div class="modal-message">
+                <div class="close-btn-wrap">
+                    <span class="modal-close"></span>
+                    <div class="imgdag">
+                        <img class="nekoimg" src="" alt="">
+                    </div>
+                </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
-    <script src="./toshiya.js"></script>
+    <!-- <script src="./toshiya.js"></script> -->
 </body>
 
 </html>
