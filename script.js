@@ -10,8 +10,6 @@ $(function () {
         }
     });
 
-
-
     $(".gobtn").on("click", function () {
         let nekoNum = $(".input").val()
         //  console.log(nekoNum);
@@ -19,8 +17,7 @@ $(function () {
         $(".nekoimg").attr("src", nekoUrl)
         // console.log(nekoUrl);
     })
-
-
+    
     $('.modal-btn').on('click', function () {
         $('.modal-container').addClass('on');
     });
